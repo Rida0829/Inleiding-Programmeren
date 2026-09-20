@@ -1,3 +1,8 @@
+int = //whole numbers
+float = //decimal numbers used with a ' . ' and not a ' , '
+String = //used for text
+
+
 //HOW TO DRAW A COLORED LINE:
 stroke(255,0,255);
 strokeWeight(6);
@@ -12,7 +17,8 @@ line(10, 10, 190, 190);     (x, y, w, h)
  >=    //GROTER OF GELIJK AAN ELKAAR
  
  
-//IF AND ELSE STATEMENTS WITH NUMBERS 
+//IF AND ELSE STATEMENTS WITH NUMBERS
+
 float leeftijd = 5.4;
 if (leeftijd <= 1){
   println("Het is een baby.");
@@ -25,11 +31,26 @@ if (leeftijd <= 1){
   
 }else if(leeftijd <= 6){
   println("Het is een kleuter.");
-  
 }
 
 
-//TRUE AND FALSE
+//TRUE AND FALSE (use 'boolean + variable = true/false')
+// AND (&&)
+
+true && true = true
+true && false = false
+false && true = false
+false && false = false
+
+// OR (||)
+
+true || true = true
+true || false = true
+false || true = true
+false || false = false
+
+//(The sign " ! " is used when smt is false and u want to make it true, or vice versa)
+
 boolean (name)= true/false;
 if (name){
  boolean = true/false;
@@ -54,3 +75,23 @@ Math.floor(5.7);   wordt 5
 Math.floor(7.0);   wordt 7
 
 //FLOOR AFRONDT NAAR HET VORIGE HELE GETAL
+
+
+
+//SWITCH CASE (example)
+
+int leeftijd = 21;
+
+switch(leeftijd){
+  case 1:
+   println("Ze is 1 jaar oud.");
+   break;
+  case 2:
+   println("Ze is 2 jaar oud.");
+   break;
+  case 3:
+   println("Ze is 3 jaar oud.");
+   break;
+  default
+   println("Haar leeftijd is niet herkenbaar!");
+}
