@@ -77,9 +77,7 @@ Math.floor(7.0);   wordt 7
 //FLOOR AFRONDT NAAR HET VORIGE HELE GETAL
 
 
-
 //SWITCH CASE (example)
-
 int leeftijd = 21;
 
 switch(leeftijd){
@@ -94,4 +92,24 @@ switch(leeftijd){
    break;
   default
    println("Haar leeftijd is niet herkenbaar!");
+}
+
+
+//WHILE loops
+int teller = 10;
+
+while(teller <= 20){
+  println("Ik ga zolang door totdat teller groter is dan 10.");
+  println(" ");
+  println("Teller is nu " + teller);
+  teller++;
+}
+
+//LOOP IN A LOOP
+for(int x = 0; x < 10; x++){
+  for(int j = 0; j < 10; j++){
+    for(int k = 0; k < 10; k++){
+      
+    }
+  }
 }
