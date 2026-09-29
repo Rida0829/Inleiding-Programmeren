@@ -105,6 +105,7 @@ while(teller <= 20){
   teller++;
 }
 
+
 //LOOP IN A LOOP
 for(int x = 0; x < 10; x++){
   for(int j = 0; j < 10; j++){
@@ -113,3 +114,57 @@ for(int x = 0; x < 10; x++){
     }
   }
 }
+
+
+
+//for
+for(int i = 0; i <= 45; i = i + 5){
+           println("mijn variabele is nu " + i);
+}
+
+//VERTICAL LINES
+size(500,500);
+background(255,255,255);
+
+strokeWeight(3);
+for(int i = 0; i < 10; i++){       // (10 = lines)
+    rect(i * 50 + 10, 0, 100, 500);  // (i * 50 + 10 = determines the x position. Can be changed.) 
+}
+
+OR
+
+//HORIZONTAL LINES   (same rules as the vertical lines apply here also)
+strokeWeight(3);
+for(int i = 0; i < 10; i++){
+    rect(0, i * 50 + 10, 500, 499);
+}
+
+
+size (500,300);
+background(255,255,255);
+
+int xWaarde = 20;
+int yWaarde = 50;
+
+for(int i = 0; i < 5; i++){       // (5 = total squares)
+         for(int j = 0; j < 2; j++){    // (2 = total rows)
+                   rect(xWaarde, yWaarde, 40, 40);   // (x, y, w, h)                   yWaarde = yWaarde + 40;
+         }
+         yWaarde = 50;
+         xWaarde = xWaarde + 100;   // (can be changed)
+}
+
+
+
+//DRAWING CIRCLES
+size(500,500);
+background(255);
+
+int sizeC = 190;    // (CAN BE CHANGED)
+
+for(int i = 0; i < 5; i++){  //(5 = total circles to draw. (Can be changed))
+  ellipse(200, 250, sizeC, sizeC);
+  sizeC = sizeC - 50;  // (CAN BE CHANGED)
+} // (DRAWS CIRCLES)
+
+println("De grootte van de kleinste cirkel " + sizeC);
