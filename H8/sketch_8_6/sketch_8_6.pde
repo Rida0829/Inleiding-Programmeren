@@ -1,4 +1,4 @@
-size(500, 500);
+size(550, 500);
 background(255);
 
 int sizeC = 200;
