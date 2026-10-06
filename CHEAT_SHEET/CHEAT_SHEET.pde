@@ -168,3 +168,24 @@ for(int i = 0; i < 5; i++){  //(5 = total circles to draw. (Can be changed))
 } // (DRAWS CIRCLES)
 
 println("De grootte van de kleinste cirkel " + sizeC);
+
+
+
+
+//HOW TO MAKE AN ARRAY
+
+(DataType)[] MakeYourOwnVariable;
+
+void setup(){
+      MakeYourOwnVariable = new (DataType)[HowManyYouWant];
+}
+
+OR
+
+(DataType)[] = MakeYourOwnVariable = new (DataType)[HowManyYouWant];
+
+//How to give a value to an array?
+(variableName [indexNumber]) = (value);   
+
+//EXAMPLE 
+mijnStapelGetallen[0] = 5;
