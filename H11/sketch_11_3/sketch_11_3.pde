@@ -1,6 +1,6 @@
 void setup(){
 int[] mijnStapelGetallen = new int[10];
-      mijnStapelGetallen[0] = 1;
+      mijnStapelGetallen[0] = 0;
       mijnStapelGetallen[1] = 5;
       mijnStapelGetallen[2] = 10;
       mijnStapelGetallen[3] = 15;
